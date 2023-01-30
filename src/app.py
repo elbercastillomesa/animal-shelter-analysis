@@ -3,6 +3,7 @@ from dash import Dash, html, dcc
 import plotly.graph_objects as go
 
 app = Dash(__name__)
+server = app.server
 
 xs = list(range(30))
 ys = [10000 * 1.07**i for i in xs]
